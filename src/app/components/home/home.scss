@@ -1,0 +1,8 @@
+@import "../../common/common";
+
+.home-row{
+    margin: 15px auto;
+    @media screen and (min-width: 992px) {
+      margin: 60px auto;    
+    }
+}

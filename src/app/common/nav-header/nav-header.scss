@@ -1,0 +1,101 @@
+@import "../common";
+
+header {
+    position: relative;
+    display: block;
+
+    &#main-nav-header {
+        padding: 10px 0;
+        background: rgba($header-background, 0.5);
+
+        .navbar {
+            &.navbar-transparent {
+                background-color: transparent;
+                border-color: transparent;
+                border: 1px solid transparent;
+                margin-bottom: 0;
+
+                .navbar-header {
+                    a {
+                        &.navbar-brand {
+                            padding: 10px 15px;
+                            @media (min-width: $screen-sm-min) {
+                                padding: 2px 0 0 15px;
+                            }
+
+                            img {
+                                &.navbar-logo {
+                                    height: 30px;
+                                    @media (min-width: $screen-sm-min) {
+                                        height: 45px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        &.navbar-toggle {
+                            border-color: $gray-variant-1;
+
+                            &:focus,
+                            &:hover {
+                                background: transparent;
+                            }
+
+                            .icon-bar {
+                                background: $white;
+                            }
+                        }
+                    }
+                }
+
+                #navbar {
+                    &.navbar-collapse {
+                        border: none;
+                        box-shadow: none;
+
+                        ul {
+                            &.navbar-nav {
+                                border-top: 1px solid $gray-variant-1;
+                                @media (min-width: $screen-sm-min) {
+                                    border: none;
+                                }
+
+                                li {
+                                    &.active {
+                                        a {
+                                            background: transparent;
+                                        }
+                                    }
+
+                                    a {
+                                        color: #ffffff;
+                                        font-weight: bold;
+                                        font-size: 14px;
+                                        padding: 15px 20px;
+                                        letter-spacing: 1px;
+                                        transition: all 0.3s ease;
+                                        text-transform: uppercase;
+
+                                        &:focus,
+                                        &:hover {
+                                            background: transparent;
+                                            color: $primary-accent;
+                                        }
+
+                                        i {
+                                            &.fa {
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
