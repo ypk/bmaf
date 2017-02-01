@@ -1,6 +1,8 @@
 class HomeController {
-  constructor() {
+  constructor(httpService) {
     this.name = 'home';
+
+    httpService.getData();
   }
 }
 
