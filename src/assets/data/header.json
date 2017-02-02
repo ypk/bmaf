@@ -1,7 +1,10 @@
 {
-  "telephoneNumber": "02089771234",
-  "logo_url": "/assets/images/beatmyairfare_logo.png",
-  "menu": [
+  topHeader: {
+    "telephoneNumber": "02089771234",
+  },
+  navHeader:{
+    "logo_url": "/assets/images/beatmyairfare_logo.png",
+    "menu": [
     {
       "url": "/",
       "title": "Home",
@@ -23,4 +26,5 @@
       "icon": "fa-vcard"
     }
   ]
+  }
 }

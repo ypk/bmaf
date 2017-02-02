@@ -7,6 +7,7 @@ let navHeaderComponent = {
   bindings: {
     headerData: '<'
   },
+  require: 'Navbar',
   template,
   controller
 };
