@@ -5,7 +5,7 @@ import './nav-header.scss';
 let navHeaderComponent = {
   restrict: 'E',
   bindings: {
-    headerData: '<'
+    navData: '<'
   },
   require: 'Navbar',
   template,

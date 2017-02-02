@@ -5,7 +5,7 @@ import './top-header.scss';
 let topHeaderComponent = {
   restrict: 'E',
   bindings: {
-    headerData: '<'
+    topData: '<'
   },
   template,
   controller

@@ -2,7 +2,7 @@ class TopHeaderController {
   constructor() {
     this.name = 'TopHeader';
     console.log("======= TopHeader =======");
-    console.log(this.headerData);
+    console.log(topData);
     console.log("======= TopHeader =======");
   }
 }
