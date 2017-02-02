@@ -1,7 +1,9 @@
 class TopHeaderController {
   constructor() {
     this.name = 'TopHeader';
-    this.telephoneNumber = '02089771234';
+    console.log("======= TopHeader =======");
+    console.log(this.headerData);
+    console.log("======= TopHeader =======");
   }
 }
 

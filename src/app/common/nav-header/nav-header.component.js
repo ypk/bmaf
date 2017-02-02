@@ -4,7 +4,9 @@ import './nav-header.scss';
 
 let navHeaderComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    headerData: '<'
+  },
   template,
   controller
 };

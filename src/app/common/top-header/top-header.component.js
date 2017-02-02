@@ -4,7 +4,9 @@ import './top-header.scss';
 
 let topHeaderComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    headerData: '<'
+  },
   template,
   controller
 };
