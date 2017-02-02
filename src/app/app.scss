@@ -1,11 +1,17 @@
 //fonts
 $icon-font-path: "~bootstrap-sass/assets/fonts/";
+$fa-font-path:   "~font-awesome/fonts/";
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 // library
 @import "~bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~font-awesome/scss/font-awesome.scss";
+
+
+
 //@import "../../node_modules/bootstrap-select/sass/bootstrap-select.scss";
 //@import "../../node_modules/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build.scss";
 

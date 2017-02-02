@@ -4,11 +4,11 @@ export class HttpService {
     constructor() {
         this.name = "HttpService";
     }
-    getData(){
-      axios.get("//jsonplaceholder.typicode.com/posts/1").then(function(data) {
-          console.log(data);
-      }).catch(function(error) {
-          console.log(error);
-      });
+    getData(api_url){
+      return axios.get(api_url)
+        .then(
+          (response) => response,
+          (error) => error
+        );
     }
 }
