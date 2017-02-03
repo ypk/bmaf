@@ -1,0 +1,13 @@
+@import "../common";
+
+.secondary-footer {
+    background: $dark-blue;
+    padding: 20px 0;
+
+    .copyright-statement {
+        color: $gray-variant-2;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+}

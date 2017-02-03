@@ -1,0 +1,154 @@
+@import "../common";
+
+.primary-footer {
+    background: $dark-blue-variant-1;
+    padding: 20px 0;
+    @media(min-width: $screen-md-min) {
+        padding: 40px 0;
+    }
+    color: $gray-variant-2;
+
+    .footer-links-row {
+        margin: 25px 0;
+
+        ul {
+            &.footer-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    &.footer-link {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 10px;
+                        display: inline-block;
+                        @media(min-width: $screen-md-min) {
+                            border-right: 1px solid $primary-accent;
+                            padding: 0 10px;
+                        }
+
+                        a {
+                            font-size: 12px;
+                            cursor: pointer;
+                            text-decoration: none;
+                            transition: 0.5s all ease;
+                        }
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .payment-accreditator-row {
+        p {
+            color: $primary-accent;
+            font-weight: bold;
+            font-size: 10px;
+            @media(min-width: $screen-md-min) {
+                font-size: 12px;
+            }
+            text-transform: uppercase;
+        }
+
+        .accreditations {
+            margin-bottom: 20px;
+            @media(min-width: $screen-md-min) {
+                margin-bottom: 0;
+            }
+
+            .accreditors {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+                .accreditor {
+                    margin: 10px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    @media(min-width: $screen-md-min) {
+                        height: 50px;
+                        width: 50px;
+                    }
+
+                    &.abta {
+                        background-image: url("/images/accreditations/abta-twc-color.png");
+                        width: 60px;
+                        @media(min-width: $screen-md-min) {
+                            width: 104px;
+                        }
+                    }
+
+                    &.atol {
+                        background-image: url("/images/accreditations/atol-white.png");
+                    }
+
+                    &.iata {
+                        background-image: url("/images/accreditations/iata-color.png");
+                        width: 40px;
+                        @media(min-width: $screen-md-min) {
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .payment-options {
+            .payment-providers {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin: 20px 0;
+
+                .payment-provider {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: block;
+                    height: 40px;
+                    width: 60px;
+                    @media(min-width: $screen-md-min) {
+                        height: 50px;
+                        width: 90px;
+                    }
+
+                    &.visa {
+                        background-image: url("/images/payment-options/visa.svg");
+                    }
+
+                    &.mastercard {
+                        background-image: url("/images/payment-options/mastercard.svg");
+                    }
+
+                    &.paypal {
+                        background-image: url("/images/payment-options/paypal.svg");
+                    }
+                }
+            }
+        }
+    }
+
+    .advice-row {
+        p {
+            font-size: 12px;
+            text-transform: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.5s all ease;
+        }
+    }
+}
