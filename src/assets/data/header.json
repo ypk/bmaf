@@ -1,30 +1,30 @@
 {
-  topHeader: {
-    "telephoneNumber": "02089771234",
+  "topHeader": {
+    "telephoneNumber": "02089771234"
   },
-  navHeader:{
+  "navHeader": {
     "logo_url": "/assets/images/beatmyairfare_logo.png",
     "menu": [
-    {
-      "url": "/",
-      "title": "Home",
-      "icon": "fa-bed"
-    },
-    {
-      "url": "/",
-      "title": "How It Works",
-      "icon": "fa-question"
-    },
-    {
-      "url": "/",
-      "title": "About",
-      "icon": "fa-user"
-    },
-    {
-      "url": "/",
-      "title": "Contact",
-      "icon": "fa-vcard"
-    }
-  ]
+      {
+        "url": "/",
+        "title": "Home",
+        "icon": "fa-bed"
+      },
+      {
+        "url": "/",
+        "title": "How It Works",
+        "icon": "fa-question"
+      },
+      {
+        "url": "/",
+        "title": "About",
+        "icon": "fa-user"
+      },
+      {
+        "url": "/",
+        "title": "Contact",
+        "icon": "fa-vcard"
+      }
+    ]
   }
 }

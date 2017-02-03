@@ -8,7 +8,7 @@ class NavbarController {
     httpService.getData(dataUrl)
       .then(
         (response) => {
-          this.headerData = response.data;
+          angular.extend(this.headerData,response.data);
         },
         (error) => { throw error; }
       );

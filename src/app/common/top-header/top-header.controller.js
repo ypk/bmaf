@@ -1,9 +1,11 @@
 class TopHeaderController {
   constructor() {
     this.name = 'TopHeader';
-    // console.log("======= TopHeader =======");
-    console.log(this.topData);
-    // console.log("======= TopHeader =======");
+    this.topHeaderData = {};
+    this.$onInit = function(){
+      angular.extend(this.topHeaderData,this.topData);
+      console.log(this.topData);
+    }
   }
 }
 

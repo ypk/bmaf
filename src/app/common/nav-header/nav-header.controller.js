@@ -1,9 +1,10 @@
 class NavHeaderController {
   constructor() {
     this.name = 'NavHeader';
-//    console.log("======= NavHeader =======");
-    console.log(this.navData);
-//    console.log("======= NavHeader =======");
+    this.navHeaderData = {};
+    this.$onInit = function(){
+      angular.extend(this.navHeaderData,this.navData);
+    }
   }
 }
 
