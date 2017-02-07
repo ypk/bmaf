@@ -3,8 +3,6 @@ import controller from './secondary-footer.controller';
 import './secondary-footer.scss';
 
 let secondaryFooterComponent = {
-  restrict: 'E',
-  bindings: {},
   template,
   controller
 };
