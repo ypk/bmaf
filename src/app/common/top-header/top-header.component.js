@@ -3,7 +3,6 @@ import controller from './top-header.controller';
 import './top-header.scss';
 
 let topHeaderComponent = {
-  restrict: 'E',
   bindings: {
     topData: '<'
   },
