@@ -1,13 +1,13 @@
 class NavbarController {
     constructor(httpService) {
         this.name = 'Navbar';
-        this.httpService = httpService;
+        this.headerService = httpService;
         this.headerData = {};
     }
     $onInit() {
-        const dataUrl = "/assets/data/header.json";
-        this.httpService.getData(dataUrl).then((response) => {
-            angular.extend(this.headerData, response.data);
+        const headerDataUrl = "/assets/data/header.json";
+        this.headerService.getData(headerDataUrl).then((headerResponse) => {
+            angular.extend(this.headerData, headerResponse.data);
         }, (error) => {
             throw error;
         });

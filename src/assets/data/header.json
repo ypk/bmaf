@@ -3,7 +3,10 @@
     "telephoneNumber": "02089771234"
   },
   "navHeader": {
-    "logo_url": "/assets/images/beatmyairfare_logo.png",
+    "logo": {
+      "logo_url": "/assets/images/beatmyairfare_logo.png",
+      "logo_alt": "Call BeatMyAirfare.com at 02089771234"
+    },
     "menu": [
       {
         "url": "/",
