@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 class NavbarController {
     constructor(httpService) {
         this.name = 'Navbar';

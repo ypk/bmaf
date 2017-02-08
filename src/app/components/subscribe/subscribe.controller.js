@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 class subscribeController {
     constructor(httpService) {
         this.name = 'Subscribe';

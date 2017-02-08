@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 class PrimaryFooterController {
   constructor(httpService) {
       this.name = 'PrimaryFooter';
