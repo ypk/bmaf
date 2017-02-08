@@ -1,30 +1,56 @@
 {
+  "links": [
+    {
+      "title": "About Us",
+      "url": "/"
+    },
+    {
+      "title": "Contact Us",
+      "url": "/"
+    },
+    {
+      "title": "Privacy Notice",
+      "url": "/"
+    },
+    {
+      "title": "Cookie Policy",
+      "url": "/"
+    },
+    {
+      "title": "Travel Advisory",
+      "url": "/"
+    },
+    {
+      "title": "Terms & Conditions",
+      "url": "/"
+    }
+  ],
   "accreditations": [
     {
       "name": "ATOL",
-      "imageUrl": "/images/accreditations/atol-white.png"
+      "imageUrl": "/assets/images/accreditations/atol-white.png"
     },
     {
       "name": "ABTA",
-      "imageUrl": "/images/accreditations/abta-twc-color.png"
+      "imageUrl": "/assets/images/accreditations/abta-twc-color.png"
     },
     {
       "name": "IATA",
-      "imageUrl": "/images/accreditations/iata-color.png"
+      "imageUrl": "/assets/images/accreditations/iata-color.png"
     }
   ],
   "payments": [
     {
       "name": "VISA",
-      "imageUrl": "/images/payment-options/visa.svg"
+      "imageUrl": "/assets/images/payment-options/visa.svg"
     },
     {
       "name": "MasterCard",
-      "imageUrl": "/images/payment-options/mastercard.svg"
+      "imageUrl": "/assets/images/payment-options/mastercard.svg"
     },
     {
       "name": "PayPal",
-      "imageUrl": "/images/payment-options/paypal.svg"
+      "imageUrl": "/assets/images/payment-options/paypal.svg"
     }
   ],
   "advisory": [

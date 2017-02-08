@@ -3,12 +3,9 @@
         <div class="row footer-links-row">
           <div class="col-xs-12">
             <ul class="footer-links text-center">
-              <li class="footer-link"><a href="#">About Us</a></li>
-              <li class="footer-link"><a href="#">Contact Us</a></li>
-              <li class="footer-link"><a href="#">Privacy Notice</a></li>
-              <li class="footer-link"><a href="#">Cookie Policy</a></li>
-              <li class="footer-link"><a href="#">Travel Advisory</a></li>
-              <li class="footer-link"><a href="#">Terms & Conditions</a></li>
+              <li class="footer-link" ng-repeat="link in $ctrl.footerData.links">
+                <a ng-href="{{link.url}}">{{link.title}}</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -16,28 +13,22 @@
             <div class="col-xs-12 col-md-6 accreditations">
                 <p class="title text-center">Accreditations</p>
                 <div class="accreditors">
-                    <div class="accreditor atol"></div>
-                    <div class="accreditor abta"></div>
-                    <div class="accreditor iata"></div>
+                      <div class="accreditor" ng-repeat="accreditation in $ctrl.footerData.accreditations" ng-class="accreditation.name"
+                        ng-style="{'background-image': 'url({{accreditation.imageUrl}})'}"></div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 payment-options">
                 <p class="title text-center">We proudly Accept</p>
                 <div class="payment-providers">
-                    <div class="payment-provider visa"></div>
-                    <div class="payment-provider mastercard"></div>
-                    <div class="payment-provider paypal"></div>
+                    <div class="payment-provider" ng-repeat="payment in $ctrl.footerData.payments" ng-class="payment.name"
+                      ng-style="{'background-image': 'url({{payment.imageUrl}})'}"></div>
                 </div>
             </div>
         </div>
         <div class="row advice-row">
             <div class="col-xs-12">
                 <h6>TRAVEL AWARE, ADVICE & SAFETY</h6>
-                <p>The Foreign & Commonwealth Office have <a href="//www.gov.uk/travelaware#intcmp=Footer_TravelAware">up-to-date advice on staying safe and healthy abroad</a>. For more on security, local laws and the latest travel information, visit
-                    the FCO Travel Aware website or view our guide to passport/visa/health information. The advice can change so check regularly for the latest information.</p>
-                <p>Many of the flights and flight-inclusive holidays on this website are financially protected by the ATOL scheme. But ATOL protection does not apply to all services listed on this website. Please ask us to confirm
-                    what protection may apply to your booking. If you do not receive an ATOL Certificate then your booking will not be ATOL protected. If you do receive an ATOL Certificate but all the parts of your trip are not listed on it, those parts will not be ATOL protected. Please see our general terms and conditions for further details on ATOL or for more information about financial protection and the ATOL Certificate go to: <a href="http://www.atol.org.uk/ATOLCertificate">www.atol.org.uk/ATOLCertificate</a>.
-                <p>Book with Confidence. We are a member of ABTA which means you have the benefit of ABTA's assistance and Code of Conduct. We provide <a href="https://abta.com/go-travel/before-you-travel/travel-tips/financial-protection-4">financial protection</a> for your money when you buy a package holiday. If you buy other travel arrangements such as accommodation only this protection doesn't apply.</p>
+                <p ng-repeat="advice in $ctrl.footerData.advisory" ng-bind-html="advice"></p>
             </div>
         </div>
     </div>
