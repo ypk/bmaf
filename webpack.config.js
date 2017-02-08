@@ -1,11 +1,14 @@
-var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var path = require('path');
+var webpack = require('webpack');
 
 var appPath = path.resolve(__dirname, 'src/app', 'app.js');
 var buildPath = path.resolve(__dirname, 'src');
 
 var webpackConfig = {
-    devtool: 'inline-source-map',
+    devtool: '#inline-source-map',
     entry: [
         appPath
     ],
@@ -19,8 +22,12 @@ var webpackConfig = {
                 exclude: /node_modules/
             }, {
                 test: /\.scss$/,
-                loader: 'style-loader!css-loader!sass-loader'
-            }, {
+                loader: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader!sass-loader"
+                })
+//                loader: 'style-loader!css-loader!sass-loader'
+              }, {
                 test: /\.html$/,
                 loader: 'raw-loader'
             },
@@ -39,8 +46,8 @@ var webpackConfig = {
         ]
     },
     output: {
-        path: buildPath,
-        filename: 'bundle.js'
+        // path: __dirname + "/src/dist",
+        // filename: "[name].bundle.js"
     },
     devServer: {
         contentBase: buildPath,
@@ -48,6 +55,19 @@ var webpackConfig = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
+        new ngAnnotatePlugin({
+            add: true,
+            sourcemap: true
+        }),
+        new ExtractTextPlugin({
+      			filename: 'styles.css',
+      			disable: false,
+      			allChunks: true
+    		}),
+        new OptimizeCssAssetsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: false, mangle: false, sourcemap: false
+        }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
