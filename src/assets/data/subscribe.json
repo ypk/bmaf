@@ -1,0 +1,30 @@
+{
+  "subscription_server": "//subscribe.beatmyairfare.com/subscribe.php",
+  "social_media": [
+    {
+      "title": "Facebook",
+      "link": "//www.facebook.com/",
+      "icon": "fa-facebook-square"
+    },
+    {
+      "title": "Twitter",
+      "link": "//www.twitter.com/",
+      "icon": "fa-twitter"
+    },
+    {
+      "title": "Instagram",
+      "link": "//www.instagram.com/",
+      "icon": "fa-instagram"
+    },
+    {
+      "title": "Google Plus",
+      "link": "//plus.google.com/",
+      "icon": "fa-google-plus"
+    },
+    {
+      "title": "YouTube",
+      "link": "//www.youtube.com/",
+      "icon": "fa-youtube"
+    }
+  ]
+}

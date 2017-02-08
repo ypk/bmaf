@@ -1,0 +1,102 @@
+@import "../../common/common";
+
+section {
+    &#subscribe-social-media {
+        background: $dark-blue;
+        position: relative;
+        padding: 30px 0;
+
+        .newsletter-row {
+            label {
+                margin: 15px 0;
+                color: $white;
+                text-transform: uppercase;
+            }
+
+            .custom-group {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                @media(min-width: $screen-md-min) {
+                    width: 100%;
+                    flex-direction: row;
+                }
+
+                .form-control {
+                    @extend .input;
+                    background: $dark-blue-variant-1;
+                    border: none;
+                    margin-top: 10px;
+                    height: 43px;
+                }
+
+                a {
+                    &.btn {
+                        &.btn-submit {
+                            @extend .submit;
+
+                            i {
+                                &.fa {
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-links-row {
+            text-align: center;
+            @media(min-width: $screen-md-min) {
+                text-align: right;
+            }
+
+            .social-links {
+                margin: 30px auto 0;
+                @media(min-width: $screen-md-min) {
+                    margin: 60px auto 0;
+                }
+
+                ul {
+                    &.links-list {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+
+                        li {
+                            &.link-container {
+                                height: 40px;
+                                width: 40px;
+                                background: $primary-accent;
+                                border-radius: 50%;
+                                display: inline-block;
+                                list-style-type: none;
+                                margin: auto 10px;
+                                @media(min-width: $screen-md-min) {
+                                    margin: auto 5px;
+                                }
+                                text-align: center;
+
+                                &:focus,
+                                &:hover {
+                                    background: $primary;
+                                }
+
+                                a {
+                                    cursor: pointer;
+
+                                    i {
+                                        color: $white;
+                                        font-size: 20px;
+                                        line-height: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

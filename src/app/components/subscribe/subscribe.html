@@ -1,0 +1,26 @@
+<section id="subscribe-social-media">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 newsletter-row">
+                <form class="form" ng-submit="$ctrl.onSubmit()">
+                  <label>Subscribe to our newsletter</label>
+                  <div class="custom-group">
+                      <input type="email" class="form-control" ng-change="$ctrl.onChange()" required class="form-control input" value="" ng-model-options="{allowInvalid: true, debounce: 250}"  ng-model="$ctrl.subscriptionEmail" id="subscription-email" placeholder="Enter your Email" />
+                      <a href="#" class="btn btn-submit" ng-click="$ctrl.onSubmit()">
+                          <i class="fa fa-paper-plane"></i>Subscribe
+                      </a>
+                  </div>
+                </form>
+            </div>
+            <div class="col-xs-12 col-md-6 social-links-row">
+                <div class="social-links">
+                    <ul class="links-list">
+                        <li class="link-container" ng-repeat="socialmedia in $ctrl.socialData.social_media">
+                            <a ng-href="{{socialmedia.url}}" alt="{{socialmedia.name}}"><i class="fa" ng-class="socialmedia.icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
