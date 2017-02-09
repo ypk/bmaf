@@ -1,0 +1,88 @@
+@import "../../common/common";
+
+section {
+    &#how-it-works {
+        position: relative;
+        margin-top: 40px;
+        padding: 60px 0;
+        background: $white;
+        border-bottom: 1px solid #gray-variant-2;
+
+        .container {
+            .row {
+                margin-bottom: 45px;
+
+                &.section-details {
+                    .section-title {
+                        margin-bottom: 30px;
+                        color: $primary-accent;
+                        text-transform: uppercase;
+
+                        h2 {
+                            font-weight: 800;
+                            letter-spacing: 2px;
+                        }
+
+                        h4 {
+                            font-weight: 800;
+                        }
+                    }
+
+                    .section-message {
+                        p {
+                            line-height: 2;
+                        }
+                    }
+                }
+
+                .work-steps {
+                    .step {
+                        margin: 45px auto;
+                        &:not(:last-child) {
+                            &:after {
+                                content: "";
+                                width: 50%;
+                                height: 2px;
+                                background: $primary-accent;
+                                content: "";
+                                position: absolute;
+                                left: 25%;
+                                bottom: -10%;
+                                @media(min-width: $screen-md-min) {
+                                    left: auto;
+                                    bottom: auto;
+                                    right: -25%;
+                                    top: 20%;
+                                }
+                            }
+                        }
+
+                        &.step-1,
+                        &.step-2,
+                        &.step-3 {
+                            .icon {
+                                border-radius: 50%;
+                                background: $primary-accent;
+                                color: $white;
+                                font-size: 35px;
+                                height: 80px;
+                                padding: 15px;
+                                width: 80px;
+                                position: relative;
+                                margin: 0 auto 30px;
+                            }
+
+                            .title {
+                                h4 {
+                                    font-weight: 800;
+                                    text-transform: uppercase;
+                                }
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

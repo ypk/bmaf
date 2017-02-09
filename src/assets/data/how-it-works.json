@@ -1,0 +1,23 @@
+{
+  "intro": [
+    "A simple three step process to beat your airfare involves in filling your current airfare details.",
+    "Our team of highly trained agents scour the internet, travel agencies and directly from airline providers to bring you the best deal.\n\n"
+  ],
+  "steps": [
+    {
+      "stepIcon": "fa-list-alt",
+      "heading": "FILL YOUR DETAILS",
+      "content": "Fill in your details about current airfare"
+    },
+    {
+      "stepIcon": "fa-paper-plane-o",
+      "heading": "SUBMIT THE FORM",
+      "content": "Submit the form with all the details filled in"
+    },
+    {
+      "stepIcon": "fa-shopping-cart",
+      "heading": "GET BEATEN AIRFARE",
+      "content": "Recieve lowest airfare rates to beat your airfare"
+    }
+  ]
+}

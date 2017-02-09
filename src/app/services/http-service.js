@@ -1,11 +1,10 @@
-import axios from 'axios';
-
 export class HttpService {
-    constructor() {
+    constructor($http) {
         this.name = "HttpService";
+        this.$http = $http;
     }
     getData(api_url){
-      return axios.get(api_url)
+      return this.$http.get(api_url)
         .then(
           (response) => response,
           (error) => error

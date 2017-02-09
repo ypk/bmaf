@@ -22,11 +22,11 @@ var webpackConfig = {
                 exclude: /node_modules/
             }, {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: "css-loader!sass-loader"
-                })
-//                loader: 'style-loader!css-loader!sass-loader'
+//                 loader: ExtractTextPlugin.extract({
+//                     fallback: "style-loader",
+//                     use: "css-loader!sass-loader"
+//                 })
+                loader: 'style-loader!css-loader!sass-loader'
               }, {
                 test: /\.html$/,
                 loader: 'raw-loader'
@@ -55,19 +55,19 @@ var webpackConfig = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new ngAnnotatePlugin({
-            add: true,
-            sourcemap: true
-        }),
-        new ExtractTextPlugin({
-      			filename: 'styles.css',
-      			disable: false,
-      			allChunks: true
-    		}),
-        new OptimizeCssAssetsPlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: false, mangle: false, sourcemap: false
-        }),
+        // new ngAnnotatePlugin({
+        //     add: true,
+        //     sourcemap: true
+        // }),
+        // new ExtractTextPlugin({
+      	// 		filename: 'styles.css',
+      	// 		disable: false,
+      	// 		allChunks: true
+    		// }),
+        // new OptimizeCssAssetsPlugin(),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: false, mangle: false, sourcemap: false
+        // }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
